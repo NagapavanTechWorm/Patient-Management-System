@@ -1,0 +1,638 @@
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 159
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan",
+  "email": "nagapavan@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-08-12T230228.201.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 167
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-08-12T230204.201.json
+
+###
+
+GRPC localhost:9001/BillingService/CreateBillingAccountGRPC localhost:9001/BillingService/CreateBillingAccountGET http://localhost:4000/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-28T220822.200.json
+
+###
+
+DELETE http://localhost:4000/patients/123e4567-e89b-12d3-a456-426614174000
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:4000/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-28T220755.200.json
+
+###
+
+DELETE http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 134
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doej",
+  "email": "nagapafan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T220309.200.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 134
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doej",
+  "email": "nagapafan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T220307.200.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doej",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T204539.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 134
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doej",
+  "email": "nagapafan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T204327.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 92
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T204134.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+//  "email": "nagapafan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T204121.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapafan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T204110.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapafan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T204051.200.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapafan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T204032.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 92
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T203301.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 92
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T203242.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 132
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapaan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T203231.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 132
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapaan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T202851.200.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T202841.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T202833.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T202825.200.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T202702.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T202634.400.json
+
+###
+
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Content-Length: 133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15"
+}
+
+<> 2025-07-28T202454.404.json
+
+###
+
+GET http://localhost:4000/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-28T202436.200.json
+
+###
+
+PUT http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 167
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T202418.405.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 167
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T195801.400.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 167
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T195701.400.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 167
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T195655.400.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 167
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@efxample.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T195648.201.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T193817.400.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T193749.400.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-28T193703.400.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-26T233444.400.json
+
+###
+
+GET http://localhost:4000/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-26T233157.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 166
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Nagapavan Doe",
+  "email": "nagapavan.doe@example.com",
+  "address": "123 Main Street",
+  "dateOfBirth": "1995-05-15",
+  "registeredDate": "2025-07-26"
+}
+
+<> 2025-07-26T233147.201.json
+
+###
+
+GET http://localhost:4000/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-26T230028.200.json
+
+###
+
+GET http://localhost:4000/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-07-26T225716.500.json
+
+###
+
