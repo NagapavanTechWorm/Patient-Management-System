@@ -18,7 +18,7 @@ public class KafkaProducer {
     public void sendEvent(Patient patient) {
         PatientEvent event = PatientEvent.newBuilder()
                 .setPatientId(patient.getId().toString())
-                .setName(patient.getId().toString())
+                .setName(patient.getName().toString())
                 .setEmail(patient.getEmail())
                 .setEventType("PATIENT_CREATED")
                 .build();
