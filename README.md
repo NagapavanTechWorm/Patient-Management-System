@@ -399,3 +399,55 @@ WHERE NOT EXISTS (
 ```
 POSTGRES_DB=db;POSTGRES_PASSWORD=password;POSTGRES_USER=admin_user
 ```
+
+
+# Docker Container CMD
+
+## Postgres-db Patient-Service-db
+
+```
+docker run -p 5000:5432 -v /home/nagapavan/Desktop/Dev/Patient-Management-System/db_volume:/var/lib/postgresql/data --env POSTGRES_USER=admin_user --env POSTGRES_PASSWORD=password --env POSTGRES_DB=db --name patient-service-db --pull missing --network internal postgres:latest 
+```
+
+## Patient-Service
+
+```
+docker build -f Patient-Service/Dockerfile -t patient-service:latest . && docker run --env BILLING_SERVICE_ADDRESS=billing-service --env BILLING_SERVICE_GRPC_PORT=9001 --env SPRING_DATASOURCE_PASSWORD=password --env SPRING_DATASOURCE_URL=jdbc:postgresql://patient-service-db:5432/db --env SPRING_DATASOURCE_USERNAME=admin_user --env SPRING_JPA_HIBERNATE_DDL_AUTO=update --env SPRING_SQL_INIT_MODE=always --env SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 --name patient-service --network internal patient-service:latest 
+```
+
+## Billing-Servicec
+
+```
+docker build -f billing-service/Dockerfile -t billing-service:lastest . && docker run -p 4001:4001 -p 9001:9001 --name billing-service --network internal billing-service:lastest 
+```
+
+## Kafka
+
+```
+docker run -p 9092:9092 -p 9094:9094 --env KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094 --env KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER --env KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093 --env KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT --env KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094 --env KAFKA_CFG_NODE_ID=0 --env KAFKA_CFG_PROCESS_ROLES=controller,broker --name kafka --pull missing --network internal bitnami/kafka:latest 
+```
+
+## Analytics-Service
+
+```
+docker build -f analytics-service/Dockerfile -t analytics-service:latest . && docker run -p 4002:4002 --env SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092 --name analytics-service --network internal analytics-service:latest 
+```
+
+## API-GateWay
+
+```
+docker build -f api-gateway/Dockerfile -t api-gateway:latest . && docker run -p 4004:4004 --env AUTH_SERVICE_URL=http://auth-service:4005 --name api-gateway --network internal api-gateway:latest 
+```
+
+## Auth-Service-db
+
+```
+docker run -p 5001:5432 -v /home/nagapavan/Desktop/Dev/Patient-Management-System/auth-service-db-vol:/var/lib/postgresql/data --env POSTGRES_DB=db --env POSTGRES_PASSWORD=password --env POSTGRES_USER=admin_user --name auth-service-db --pull missing --network internal postgres:latest 
+```
+
+## Auth-Service
+
+```
+docker build -f auth-service/Dockerfile -t auth-service:latest . && docker run --env JWT_SECRET=8f3d2a1b4c5e6f7g8h9i0j1k2l3m4n5o --env SPRING_DATASOURCE_PASSWORD=password --env SPRING_DATASOURCE_URL=jdbc:postgresql://auth-service-db:5432/db --env SPRING_DATASOURCE_USERNAME=admin_user --env SPRING_JPA_HIBERNATE_DDL_AUTO=update --env SPRING_SQL_INIT_MODE=always --name auth-service --network internal auth-service:latest ```
+```
+
